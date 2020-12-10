@@ -123,6 +123,7 @@ form {
     width: 0;
     height: 2px;
     color: var(--primary1);
+    transition: .3s;
   }
 
   &:after {
@@ -139,6 +140,7 @@ form {
   justify-self: center;
   align-items: center;
   color: var(--grey2);
+  transition: .3s;
 }
 
 .input {

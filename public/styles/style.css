@@ -136,6 +136,8 @@ form h2 {
   width: 0;
   height: 2px;
   color: var(--primary1);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .input-div:after {
@@ -155,6 +157,8 @@ form h2 {
       -ms-flex-align: center;
           align-items: center;
   color: var(--grey2);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .input {
