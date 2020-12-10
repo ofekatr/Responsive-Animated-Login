@@ -98,40 +98,39 @@ form {
     }
   }
 
-  &.focus {
-    div h5 {
-      top: -5px;
-      font-size: 1rem;
-    }
-
-    .i {
-      color: var(--primary1);
-    }
-  }
-
-  .input-div.focus {
-    &:after, &:before {
-      width: 50%;
-    }
-  }
-
   &:after,
   &:before {
     content: "";
     position: absolute;
     bottom: -2px;
-    width: 0;
+    width: 0%;
     height: 2px;
-    color: var(--primary1);
-    transition: .3s;
-  }
-
-  &:after {
-    right: 50%;
+    background-color: var(--primary1);
+    transition: 0.3s;
   }
 
   &:before {
+    right: 50%;
+  }
+
+  &:after {
     left: 50%;
+  }
+}
+
+.input-div.focus {
+  & > div > h5 {
+    top: -5px;
+    font-size: 1rem;
+  }
+
+  .i {
+    color: var(--primary1);
+  }
+
+  &:after,
+  &:before {
+    width: 50%;
   }
 }
 
@@ -140,7 +139,7 @@ form {
   justify-self: center;
   align-items: center;
   color: var(--grey2);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .input {

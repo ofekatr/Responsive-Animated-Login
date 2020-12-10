@@ -7,7 +7,7 @@ function focusHandler() {
 
 function blurHandler() {
     const parent = this.parentNode.parentNode;
-    parent.classList.remove("focus");
+    this.value === "" && parent.classList.remove("focus");
 }
 
 inputs.forEach(input => {

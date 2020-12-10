@@ -116,7 +116,26 @@ form h2 {
   transition: 0.3s;
 }
 
-.input-div.focus div h5 {
+.input-div:after, .input-div:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-div:before {
+  right: 50%;
+}
+
+.input-div:after {
+  left: 50%;
+}
+
+.input-div.focus > div > h5 {
   top: -5px;
   font-size: 1rem;
 }
@@ -125,27 +144,8 @@ form h2 {
   color: var(--primary1);
 }
 
-.input-div .input-div.focus:after, .input-div .input-div.focus:before {
+.input-div.focus:after, .input-div.focus:before {
   width: 50%;
-}
-
-.input-div:after, .input-div:before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  color: var(--primary1);
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.input-div:after {
-  right: 50%;
-}
-
-.input-div:before {
-  left: 50%;
 }
 
 .i {
@@ -157,8 +157,8 @@ form h2 {
       -ms-flex-align: center;
           align-items: center;
   color: var(--grey2);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .input {
